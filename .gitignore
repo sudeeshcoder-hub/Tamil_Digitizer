@@ -1,0 +1,14 @@
+# Ignore the virtual environment (heavy folder)
+venv/
+env/
+
+# Ignore sensitive API keys
+.env
+
+# Ignore temporary Python files
+__pycache__/
+*.pyc
+
+# Ignore user uploads and generated outputs
+uploads/
+outputs/

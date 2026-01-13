@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Question Paper Digitizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tamil Paper Digitizer</h1>
+        <h1>Created by K.SUDEESH for his father R.KUMAR</h1>
+        <p>Upload your handwritten paper or PDF to convert it into a tamil word format.</p>
+        
+        <form id="uploadForm">
+            <label for="mode">Select Document Format:</label>
+            <select id="mode" name="mode" required>
+                <option value="mak-tamil">★ MAK Tamil Question Paper (Standard)</option>
+                <option value="choose">1. Only Choose (MCQ/ உரிய விடையைத் தேர்ந்தெடுத்து எழுதுக)</option>
+                <option value="paragraph">2. Only Paragraphs(கட்டுரை)</option>
+                <option value="both">3. Both (Mixed/இரண்டும்)</option>
+            </select>
+            
+            <br><br>
+
+            <input type="file" id="fileInput" name="file" accept=".jpg,.jpeg,.png,.pdf" required>
+            <button type="submit">Analyze & Generate</button>
+        </form>
+
+        <div id="status"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
