@@ -66,7 +66,7 @@ def analyze_image_with_gemini(image_path, mode):
 
     print(f"Processing file: {image_path} | Detected Type: {mime_type}")
 
-    model_id = "gemini-2.0-flash"
+    model_id = 'gemini-3-flash-preview'
 
     base_instruction = """
     You are an expert Tamil Data Entry Operator.
